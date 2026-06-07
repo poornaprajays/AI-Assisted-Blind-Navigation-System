@@ -1,4 +1,4 @@
-# VisionMate AI - AI-Assisted Blind Navigation System
+# - AI-Assisted Blind Navigation System
 
 VisionMate AI is a high-performance, real-time assistive navigation system designed to empower visually impaired individuals. It translates raw spatial computer vision detections into structured, filtered, and non-intrusive safety alerts.
 
