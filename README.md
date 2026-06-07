@@ -13,21 +13,4 @@ The pipeline consists of the following core modules:
 
 ---
 
-## Getting Started
-
-### Installation
-```bash
-pip install -r requirements.txt
-```
-
-### Running the Tests
-To verify the engine rules, metrics, and cooldown logic:
-```bash
-python -m pytest tests/test_context_engine.py -v
-```
-
-### Running the Simulation
-To run the local end-to-end simulation pipeline:
-```bash
-python -m src.context_engine
-```
+Why not when we can! mission to vision ! 
