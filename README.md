@@ -12,5 +12,4 @@ The pipeline consists of the following core modules:
 4. **Data Contracts (`src/schemas/contracts.py`):** Optimized dataclasses using Python `__slots__` to minimize garbage collection churn and latency.
 
 ---
-
-Why not when we can! mission to vision ! 
+| Why not when we can! | mission to vision ! | work in progress | 
