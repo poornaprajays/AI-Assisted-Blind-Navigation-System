@@ -210,7 +210,7 @@ class ContextEngine:
                     message = f"Avoid: {det.class_name} close on your {det.spatial_zone}."
                 elif det.estimated_distance <= self.caution_distance_m:
                     # Caution range on sides; low warning priority
-                    priority = AlertPriority.MEDIUM
+                    priority = AlertPriority.LOW
                     message = f"{det.class_name} to your {det.spatial_zone}."
                 else:
                     # Distant objects on side - IGNORED completely to protect against cognitive clutter
@@ -265,7 +265,7 @@ if __name__ == "__main__":
     logger.info("Initializing complete pipeline simulation: Camera -> Detection -> Context Reasoning...")
 
     # 1. Spawn Camera
-    stream = CameraStream(src=0, width=640, height=480, fps=30)
+    stream = CameraStream(src="mock", width=640, height=480, fps=30)
     
     # 2. Spawn YOLO Detector (restricting classes for direct visual navigation examples)
     engine = DetectionEngine(model_name="yolov8n.pt", conf_threshold=0.25, allowed_classes=["chair", "person", "car"])
